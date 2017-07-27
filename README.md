@@ -4,7 +4,7 @@
 
 ---
 
-## 資料夾結構
+### 資料夾結構
 
 |資料夾/檔案|用途|
 |-|-|
@@ -14,17 +14,17 @@
 
 ---
 
-## 怎麼用
+### 怎麼用
 
 `$ node index.js`
 
 ---
 
-## index.js說明
+### index.js說明
 
 >var data = require('../jsontogeojson/newTaipeiBike.json');
 
-*把要轉換的json讀進來
+* 把要轉換的json讀進來
 
 >var output = `JSON.stringify`(GeoJSON.parse(` 'data.result.records' `, {`Point`: ['lat', 'lng'], `include`: ['sna', 'sarea', 'ar']}));
 
@@ -40,14 +40,14 @@
 
 ---
 
-## 用到的套件
+### 用到的套件
 
 * node fs : 檔案寫入
 * geojson：轉換成geojson
 
 ---
 
-## 參考資料
+### 參考資料
 
 [geojson](https://www.npmjs.com/package/geojson)
 
