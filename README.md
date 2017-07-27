@@ -2,9 +2,8 @@
 
 讀取json檔然後轉換成Google Map用的GeoJson
 
----
 
-### 資料夾結構
+## 資料夾結構
 
 |資料夾/檔案|用途|
 |-|-|
@@ -12,15 +11,13 @@
 |data|本地端的json檔|
 |index.js|執行程式|
 
----
 
-### 怎麼用
+## 怎麼用
 
 `$ node index.js`
 
----
 
-### index.js說明
+## index.js說明
 
 >var data = require('../jsontogeojson/newTaipeiBike.json');
 
@@ -38,16 +35,14 @@
 * dist/geoJson.js：輸出的位置
 * eqfeed_callback(' + output + ')：output會是json，然後再加上eqfeed_callback()包在最外面組成一個js檔，符合googlemap匯入geojson範例中的格式
 
----
 
-### 用到的套件
+## 用到的套件
 
 * node fs : 檔案寫入
 * geojson：轉換成geojson
 
----
 
-### 參考資料
+## 參考資料
 
 [geojson](https://www.npmjs.com/package/geojson)
 
