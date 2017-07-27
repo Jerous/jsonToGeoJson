@@ -1,0 +1,14 @@
+{
+  "name": "jsontogeojson",
+  "version": "1.0.0",
+  "description": "json to geoJson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerous",
+  "license": "ISC",
+  "dependencies": {
+    "geojson": "^0.4.1"
+  }
+}
