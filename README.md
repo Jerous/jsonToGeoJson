@@ -23,12 +23,16 @@
 
 * 把要轉換的json讀進來
 
+---
+
 >var output = `JSON.stringify`(GeoJSON.parse(` 'data.result.records' `, {`Point`: ['lat', 'lng'], `include`: ['sna', 'sarea', 'ar']}));
 
 * data.result.records：json資料中要放到geojson的features內容
 * Point：會轉成geojson的geometry內容，type是point
 * include：會轉成geojson的properties內容，想放幾個就幾個
 * JSON.stringify()：處理完的物件在轉換成json格式
+
+---
 
 >fs.writeFile(`'dist/geoJson.js'`, `'eqfeed_callback(' + output + ')'`, CALLBACK);
 
